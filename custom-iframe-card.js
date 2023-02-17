@@ -31,6 +31,7 @@ class CustomIframeCard extends HTMLElement {
         ifrm.setAttribute("src", config.url);
         ifrm.classList.add("resp-iframe");
         ifrm.setAttribute("sandbox", "allow-same-origin allow-scripts allow-popups allow-forms");
+	ifrm.setAttribute("scrolling", "no");
 		resp.appendChild(ifrm);
 		
     const style = document.createElement('style');
